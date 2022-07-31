@@ -20,18 +20,23 @@
       <header>
         <span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
         <h1 id="logo"><a href="#">Eric Lopes</a></h1>
-        <p>Fullstack developer<br />
-			Game developer wannabe<br />
-			<a href="/CV Eric Lopes.pdf">Download CV</a>
+        <p>
+          Fullstack developer<br />
+          Game developer wannabe<br />
+        </p>
       </header>
+
       <nav id="nav">
         <ul>
-          <li><a href="#one" class="active">About me</a></li>
-          <li><a href="#two">Skills</a></li>
-          <li><a href="#three">Projects</a></li>
-          <li><a href="#four">Contact</a></li>
+          <li><a href="#about" class="active">About me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
         </ul>
       </nav>
+      <p>
+        <a href="/CV Eric Lopes.pdf">Download CV</a>
+      </p>
       <footer>
         <ul class="icons">
           <li>
@@ -52,9 +57,7 @@
             >
           </li>
           <li>
-            <a
-              href="mailto:contact@erichhl.dev"
-              class="icon solid fa-envelope"
+            <a href="mailto:contact@erichhl.dev" class="icon solid fa-envelope"
               ><span class="label">Email</span></a
             >
           </li>
@@ -66,56 +69,50 @@
     <div id="wrapper">
       <!-- Main -->
       <div id="main">
-        <!-- One -->
-        <section id="one">
+        <section id="about">
           <!-- <div class="image main" data-position="center">
 									<img src="images/banner.jpg" alt="" />
 								</div> -->
           <div class="container">
             <header class="major">
               <h2>Welcome</h2>
-              <p>to my games portfolio</p>
+              <!-- <p>to my games portfolio</p> -->
             </header>
             <p>
               I'm a passionate developer that fell in love with programming
-              since the day I learned it. I have 4 years of experience in the web
-              development area and I'm looking to switch to the game development
-              industry.
+              since the day I learned it. I have 4 years of professional
+              experience with web and mobile development and I'm looking to
+              switch to the game development industry. Throughout the years I
+              made a lot of little games, prototypes and participated in
+              gamejams, using mainly Unity and Godot. In this portfolio you'll
+              find some of the ones I'm most proud of.
             </p>
           </div>
         </section>
 
-        <!-- Two -->
-        <section id="two">
-          <div class="container">
-            <h3>Skills</h3>
-            
-            <ul class="feature-icons">
-              <li class="icon solid fa-code">Languages<br/>C#, Lua, GDScript, Javascript, Java</li>
-              <li class="icon solid fa-cubes">Engines / Frameworks<br/>Unity, Godot, Löve2D</li>
-              <li class="icon solid fa-toolbox">Others<br/>Git, Agile/SCRUM, SQL, Mongo</li>
-              
-            </ul>
-          </div>
-        </section>
-
-        <!-- Three -->
-        <section id="three">
+        <section id="projects">
           <div class="container">
             <h3>Projects</h3>
             <p></p>
             <div class="features">
               <article>
-                <a href="https://rsensato.itch.io/dye-the-die" class="image"
-                  ><img src="images/DyeTheDie.png" alt=""
-                /></a>
+                <a href="https://rsensato.itch.io/dye-the-die" class="image">
+                  <img
+                    src="images/DyeTheDie.png"
+                    alt=""
+                    class="dynamic-gif"
+                    data-gif="images/DyeTheDie.gif"
+                    data-still="images/DyeTheDie.png"
+                  />
+                </a>
                 <div class="inner">
                   <h4>Dye the Die</h4>
                   <p>
                     A puzzle game where you rotate a die to paint the pips so it
                     ends up in a valid state.<br />
                     Made with Godot in a weekend for the GTMKJam 2022, where it
-                    ranked #201 out of 6154 games.
+                    ranked #201 out of 6154 games. Later, I rewrote it on Unity
+                    and published it for mobile.
                   </p>
                   <ul class="icons">
                     <li>
@@ -126,14 +123,25 @@
                       >
                     </li>
                     <li>
-                      <a href="TODO" class="icon brands fa-youtube"
-                        ><span class="label">Youtube</span></a
+                      <a
+                        href="https://play.google.com/store/apps/details?id=dev.suaveware.dyethedie"
+                        class="icon brands fa-google-play"
+                        ><span class="label">Play Store</span></a
                       >
                     </li>
                     <li>
                       <a
                         href="https://github.com/suaveware/gmtk-jam-2022"
                         class="icon brands fa-github"
+                        title="Godot version"
+                        ><span class="label">Github</span></a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://github.com/EricHHL/Dye-the-die"
+                        class="icon brands fa-github"
+                        title="Unity version"
                         ><span class="label">Github</span></a
                       >
                     </li>
@@ -141,15 +149,24 @@
                 </div>
               </article>
               <article>
-                <a href="https://play.google.com/store/apps/details?id=dev.suaveware.omniblocks" class="image"
-                  ><img src="images/omniblocks.png" alt=""
-                /></a>
+                <a
+                  href="https://play.google.com/store/apps/details?id=dev.suaveware.omniblocks"
+                  class="image"
+                >
+                  <img
+                    src="images/omniblocks.png"
+                    alt=""
+                    class="dynamic-gif"
+                    data-gif="images/omniblocks.gif"
+                    data-still="images/omniblocks.png"
+                  />
+                </a>
                 <div class="inner">
                   <h4>Omniblocks</h4>
                   <p>
-                    A tetris clone where pieces fall from all 4 sides of the
-                    screen.<br />
-                    Made with Solar2D(Lua)
+                    A twist on the tetris formula where pieces fall from all 4
+                    sides of the screen on a fixed central block.<br />
+                    Made with Lua on Solar2D.
                   </p>
                   <ul class="icons">
                     <li>
@@ -176,26 +193,31 @@
                 <div class="inner">
                   <h4>Cöisa</h4>
                   <p>
-                    A implementation of a Entity-Component-System for the Löve2D framework.
+                    A implementation of a Entity-Component-System in Lua for the
+                    Löve2D framework.
                   </p>
-				  <ul class="icons">
-					<li>
-					  <a
-						href="https://github.com/EricHHL/Coisa"
-						class="icon brands fa-github"
-						><span class="label">Github</span></a
-					  >
-					</li>
+                  <ul class="icons">
+                    <li>
+                      <a
+                        href="https://github.com/EricHHL/Coisa"
+                        class="icon brands fa-github"
+                        ><span class="label">Github</span></a
+                      >
+                    </li>
+                  </ul>
                 </div>
               </article>
-			  <article>
-                <a href="https://erichhl.itch.io/stop-shooting-yourself" class="image"
+              <!-- <article>
+                <a
+                  href="https://erichhl.itch.io/stop-shooting-yourself"
+                  class="image"
                   ><img src="images/stopShootingYourself.png" alt=""
                 /></a>
                 <div class="inner">
                   <h4>Stop Shooting Yourself!</h4>
                   <p>
-                    A topdown shooter where you can't shoot, but control when a drone that only aims at you fires.<br />
+                    A topdown shooter where you can't shoot, but control when a
+                    drone that only aims at you fires.<br />
                     Made with Godot in a weekend for the GTMKJam 2021, where it
                     ranked #652 out of 5716 games.
                   </p>
@@ -214,16 +236,19 @@
                     </li>
                   </ul>
                 </div>
-              </article>
-			  <article>
-                <a href="#" class="image"
+              </article> -->
+              <article>
+                <a
+                  href="https://globalgamejam.org/2019/games/ile-aye"
+                  class="image"
                   ><img src="images/ileAye.png" alt=""
                 /></a>
                 <div class="inner">
                   <h4>Ile Aye</h4>
                   <p>
-                    A short platformer about a bird that lived all his life trapped in a cage.
-					Made with Godot in a weekend for the Global Game Jam 2019.
+                    A short platformer about a bird that lived all his life
+                    trapped in a cage. Made with Godot in a weekend for the
+                    Global Game Jam 2019.
                   </p>
                   <ul class="icons">
                     <li>
@@ -245,21 +270,98 @@
           </div>
         </section>
 
-        <!-- Four -->
-        <section id="four">
+        <section id="skills">
           <div class="container">
-            <h3>Experience</h3>
-            <h4>TODO</h4>
-			<p></p>
+            <h3>Skills</h3>
+
+            <ul class="feature-icons">
+              <li class="icon solid fa-code">
+                Languages<br />C#, Lua, GDScript, Javascript, Java
+              </li>
+              <li class="icon solid fa-cubes">
+                Engines / Frameworks<br />Unity, Godot, Löve2D
+              </li>
+              <li class="icon solid fa-toolbox">
+                Others<br />Git, Agile/SCRUM, Mongo, Performance profiling
+              </li>
+            </ul>
           </div>
         </section>
-        </div>
+
+        <section id="experience">
+          <div class="container">
+            <h3>Experience</h3>
+            <div class="features">
+              <article>
+                <header>
+                  <h4>Pathable - Fullstack developer</h4>
+                  <p>2020 - current</p>
+                </header>
+                <p>
+                  My first experience with remote work, for an international
+                  company and in a big team. Pathable is a virtual events
+                  platform that uses the Meteor JS framework with React in the
+                  front-end. Here I work on core parts of the system, mainly on
+                  security and performance-related tasks. It's a challenging job
+                  that often requires creative solutions for difficult tasks and
+                  encourages out-of-the-box thinking, which I very much enjoy.
+                </p>
+              </article>
+              <article>
+                <header>
+                  <h4>Gênesis Tecnologia - Mobile developer</h4>
+                  <p>2019 - 2020</p>
+                </header>
+                <p>
+                  Here I was the sole responsible for the development of mobile
+                  apps to complement the company's existing web applications,
+                  using React Native for the apps and working closely with other
+                  teams to coordinate the backend API. These apps are in
+                  production today, and can be checked out
+                  <a
+                    href="https://play.google.com/store/apps/dev?id=5568938264664214199"
+                    >here</a
+                  >.
+                </p>
+              </article>
+              <article>
+                <header>
+                  <h4>COIN UFGD - Software developer internship</h4>
+                  <p>2017 - 2019</p>
+                </header>
+                <p>
+                  After developing an app for the university with a friend,
+                  <a
+                    href="https://play.google.com/store/apps/details?id=br.edu.ufgd.ufgdmob2"
+                  >
+                    UFGDMob
+                  </a>
+                  , I was offered an internship in the software development team
+                  in the university's IT department. Over there I was
+                  responsible for maintaining the app and developing new
+                  features for it, working with Java both on the backend and on
+                  the client.
+                </p>
+              </article>
+            </div>
+            <h3>Education</h3>
+            <div class="features">
+              <article>
+                <header>
+                  <h4>UFGD - Bacharelor in Computer Engineering</h4>
+                  <p>2016 - 2020</p>
+                </header>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
 
       <!-- Footer -->
       <section id="footer">
         <div class="container">
           <ul class="copyright">
-            <li>&copy; Untitled. All rights reserved.</li>
+            <li>&copy; Eric Lopes. All rights reserved.</li>
             <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
           </ul>
         </div>

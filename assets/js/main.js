@@ -13,6 +13,14 @@
 		$nav = $('#nav'),
 		$wrapper = $('#wrapper');
 
+		$('.dynamic-gif').hover((e)=>{
+			if(e.type == 'mouseenter'){
+				$(e.currentTarget).attr('src', $(e.currentTarget).attr('data-gif'));
+			}else if(e.type == 'mouseleave'){
+				$(e.currentTarget).attr('src', $(e.currentTarget).attr('data-still'));
+			}
+		})
+
 	// Breakpoints.
 		breakpoints({
 			xlarge:   [ '1281px',  '1680px' ],
